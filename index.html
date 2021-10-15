@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Escola!</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" type="image/png" href="icone.png" size="5px" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+        color: #000;
+        background-color: #f5f5f5;
+    }
+    
+    header nav {
+        background-color: #000;
+        padding: 0%;
+    }
+    
+    header nav .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header nav .logo {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    header nav .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    header .hero {
+        background-image: url('logo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .hero #formSearch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .hero #formSearch input {
+        width: 70vw;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .3);
+        text-align: center;
+    }
+    
+    main {
+        margin: 20px 0px;
+    }
+    
+    main .container h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    main .container .professores {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .professor {
+        background-color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: 0.3s ease;
+    }
+    
+    .prato:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .professor img {
+        border-radius: 5px 5px 0px 0px;
+        margin-bottom: 10px;
+    }
+    
+    .professor h4 {
+        padding: 0px 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .professor p {
+        padding: 0px 20px;
+        font-size: 1rem;
+    }
+    
+    .professor button {
+        width: 50%;
+        margin: 20px auto;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .3);
+        text-transform: uppercase;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: 0.3s ease;
+    }
+    
+    .professor button:hover {
+        background-color: #dedede;
+        color: #000;
+    }
+    
+    footer {
+        padding: 10px 0px;
+    }
+    
+    footer.container.p {
+        text-align: center;
+    }
+    
+    .hero.sobre {
+        height: 300px;
+        background-color: #3333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media (min-width:600px) {
+        main .container .professores {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        main .container .professores .professor {
+            width: 300px;
+        }
+    }
+    
+    .container {
+        width: 90vw;
+        margin: 0px auto;
+    }
+</style>
+
+<body>
+
+    <script>
+        window.alert('Bem vindo ao meu site!')
+        window.confirm('Está gostando do site?')
+        window.prompt('Qual o motivo da visita?')
+    </script>
+
+    <header>
+        <nav>
+            <div class="container">
+
+                <a href="index.html" class="logo">
+                    <h1>Escola para Todos!</h1>
+                </a>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="sobre.html">
+                                Sobre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="saibamais.html">
+                                Saiba mais
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+        <section class="hero">
+            <div class="container">
+                <fomr id="formSearch">
+                    <input type="search" placeholder=" O'QUE DESEJA SABER NO MOMENTO? " name="inputSearch" id="inputSearch">
+                </fomr>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Professores</h3>
+
+            <section class="professores">
+
+                <article class="professor">
+                    <img src="n17.png" alt=" Professor de Matemática " width="70%">
+                    <h4>Professor de Matemática I</h4>
+                    <p>A Matemática I consiste nos seguintes tópicos:
+                        <b> <br> - Teorema de Tales <br> - Teorema da bissetriz <br> - Semelhança de triângulos e proporcionalidade <br> - Circunferência e círculo <br> - Cálculo de áreas das figuras planas. <br>
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                <article class="professor">
+                    <img src="gohan.png" alt=" Professor de Matemática ">
+                    <h4>Professor de Matemática II</h4>
+                    <p>A Matemática II consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                 <article class="professor" >
+                     
+                    <img src="n18.png" alt=" Professora de Português " width="30%">
+                    <h4>Professora de Português</h4>
+                    <p>O Português consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                 <article class="professor">
+                    <img src="goku.png" alt=" Professor de História " width="50%">
+                    <h4>Professor de História</h4>
+                    <p>A História consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                 <article class="professor">
+                    <img src="kuririn.png" alt=" Professor de Geografia " width="50%">
+                    <h4>Professor de Geografia</h4>
+                    <p>A Geografia consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                 <article class="professor">
+                    <img src="bulma.png" alt=" Professor de Inglês " width="50%">
+                    <h4>Professora de Inglês</h4>
+                    <p>O Inglês consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+                 <article class="professor">
+                    <img src="vegetto.png" alt=" Professor de Ciências ">
+                    <h4>Professor de Ciências</h4>
+                    <p>A Ciência consiste nos seguintes tópicos:
+                        <b> <br> 
+                        <button type="button">Ver este professor.</button>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>Este é o meu site! <br>
+                  by: Severino! <i class="fa fa-cloud"></i><i class="fa fa-home"></i>
+                </p>
+            </div>
+         </div>
+    </footer>
+</body>
+</html>
